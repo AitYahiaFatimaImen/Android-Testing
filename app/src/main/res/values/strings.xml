@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Event</string>
+    <string name="first_btn">first btn</string>
+    <string name="secondbtn">second btn</string>
+    <string-array name="fruits">
+        <item>Orange</item>
+        <item>lemon</item>
+        <item>kuits</item>
+        <item>pear</item>
+        <item>melon</item>
+        <item>watermelon</item>
+        <item>apple</item>
+        <item>apricot</item>
+        <item>lime</item>
+        <item>pineapple</item>
+
+    </string-array>
+    <string name="title_message">Select fruits</string>
+    <string name="apple">Apple</string>
+    <string name="orange">Orange</string>
+    <string name="banan">Banan</string>
+    <string name="done">Done</string>
+</resources>

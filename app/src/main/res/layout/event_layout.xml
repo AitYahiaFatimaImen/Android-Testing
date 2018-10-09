@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.event.event">
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/first_btn"
+    android:onClick="pushbtn"
+    android:id="@+id/first"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondbtn"
+        android:onClick="pushbtn"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/first"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn2"
+        android:hint="Enter your Name"
+        android:id="@+id/edit1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit1"
+        android:hint="Enter Your Email"
+        android:id="@+id/edit2"
+        android:inputType="textEmailAddress"/>
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit2"
+        android:id="@+id/fruit"
+        android:hint="Select your fruit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fruit"
+        android:id="@+id/txt1"
+        android:text="@string/title_message"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_gravity="center_horizontal"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fruit_apple"
+        android:layout_below="@+id/txt1"
+        android:text="@string/apple"
+        android:onClick="selectItem"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fruit_orange"
+        android:layout_below="@+id/fruit_apple"
+        android:text="@string/orange"
+        android:onClick="selectItem"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fruit_banan"
+        android:layout_below="@+id/fruit_orange"
+        android:text="@string/banan"
+        android:onClick="selectItem"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fruit_banan"
+        android:id="@+id/btndone"
+        android:text="@string/done"
+        android:layout_gravity="center_horizontal"
+        android:onClick="finalselection"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btndone"
+        android:text="List of fruits"
+        android:id="@+id/txt2"/>
+
+</RelativeLayout>
